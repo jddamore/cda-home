@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="HL7 Clinical Document Architecture">
   <meta name="author" content="http://www.hl7.org">
-  <!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS color: #2E8B57;-->
   <link rel="stylesheet" href="https://hl7.org/cda/stds/core/assets-hist/css/bootstrap-fhir.css">
 
   <!-- Project extras -->
@@ -55,6 +55,10 @@
       vertical-align: top;
     }
 
+    h1 {
+      color: black;
+      font-weight: bold;
+    }
 
     .navbar-brand {
       float: left;
@@ -143,15 +147,15 @@
       <table class="none" style="text-align:center; width:100%">
         <tbody>
           <tr>
-            <td style="text-align:left;" width="20%"><a id="logo" no-external="true" href="http://hl7.org/cda"><img alt="logo cda"
-                  src="https://hl7.org/fhir/assets-hist/images/cda_both_trans.jpg"></a></td>
+            <td style="text-align:left;" width="20%"><a id="logo" no-external="true" href="http://hl7.org/cda"><img
+                  alt="logo cda" src="https://hl7.org/fhir/assets-hist/images/cda_both_trans.jpg"></a></td>
             <td>
-              <div id="ig-status" style="padding-top: 10px;"><b id="ig-title" style="font-size:2.0rem">CDA: Clinical Document
+              <div id="ig-status" style="padding-top: 10px;"><b id="ig-title" style="font-size:2.0rem">CDA: Clinical
+                  Document
                   Architecture</b></div>
             </td>
-            <td style="text-align:right;" width="20%"><a id="hl7-logo" no-external="true"
-                href="http://www.hl7.org"><img alt="visit the hl7 website"
-                  src="https://hl7.org/fhir/assets-hist/images/hl7-logo.png"></a></td>
+            <td style="text-align:right;" width="20%"><a id="hl7-logo" no-external="true" href="http://www.hl7.org"><img
+                  alt="visit the hl7 website" src="https://hl7.org/fhir/assets-hist/images/hl7-logo.png"></a></td>
           </tr>
         </tbody>
       </table>
@@ -194,9 +198,16 @@
 
               <h1>Description</h1>
               <p>
-                The HL7 Version 3 Clinical Document Architecture (CDA®) is a document markup standard that specifies the
-                structure and semantics of "clinical documents" for the purpose of exchange between healthcare providers
-                and patients. It defines a clinical document as having the following six characteristics:
+                The <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">HL7 Clinical
+                  Document Architecture (CDA®)</a> is a primary
+                standard of Health Level Seven (HL7) and used millions of times each day for the
+                exchange of patient summaries and other medical documents.
+              </p>
+              <p>
+                CDA is a document markup standard that specifies the
+                structure and semantics of clinical documents for the purpose of exchange between patients, healthcare
+                providers, and other stakeholders. It defines a clinical document as having the following six
+                characteristics:
               <ol>
                 <li>Persistence</li>
                 <li>Stewardship</li>
@@ -206,69 +217,60 @@
                 <li>Human readability</li>
               </ol>
               </p>
-              <p>
-                The <a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7">CDA is a primary
-                  standard of Health Level Seven (HL7)</a> and used millions of times each day for the
-                exchange of patient summaries and other medical documents.
-              </p>
-              <br />
               <h1>The CDA Standard</h1>
               <p>
-                All of the following are equivalent representations of CDA R2.0. The top row is the Normative version. 
+                All of the following are equivalent representations of CDA R2.0. The top row is the Normative version.
               </p>
               <table class="history-grid" width="100%">
                 <thead style="font-size:16px">
                   <tr style="background-color: #efefef">
                     <th width="15%">Date</th>
-                    <th width="15%">Version</th>
-                    <th width="70%">Description</th>
+                    <th width="20%">Version</th>
+                    <th width="65%">Description</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><a href="https://hl7.org/cda/stds/online-navigation/2024May/" target="_blank">2024-05-31</a></td>
+                    <td><a href="https://hl7.org/cda/stds/online-navigation/2024May/" target="_blank">2024-05-31</a>
+                    </td>
                     <td>2.0.0-OnlineNavigation</td>
-                    <td>Clinical Document Architecture R2.0 Online Navigator (Normative)<br />
-                      </td>
+                    <td>CDA R2.0 Online Navigation (<b>Normative</b>)<br />
+                      This makes the original CDA R2.0 publication web-accessible.
+                    </td>
                   </tr>
                   <tr>
                     <td><a href="https://hl7.org/cda/stds/core/2.0.0-sd/" target="_blank">2024-05-17</a></td>
                     <td>2.0.0-sd</td>
-                    <td>Clinical Document Architecture R2.0 in Structured Definition (Informative)<br />
-                      This supports CDA implementation guides that publish using Structured Definition</td>
+                    <td>CDA R2.0 in Structure Definition Format</a> (<b>Informative</b>)<br />
+                      This supports CDA implementation guides authored using <a
+                        href="https://hl7.org/fhir/R5/structuredefinition.html" target="_blank">StructureDefinition</a>.
+                    </td>
                   </tr>
                   <tr>
-                    <td><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7" target="_blank">2010-06-24</a>
+                    <td><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7"
+                        target="_blank">2010-06-24</a>
                     </td>
                     <td>2.0.0</td>
-                    <td>CDA® Release 2 (original 2010 publication, download only)</td>
+                    <td>CDA R2.0<br />This is the original 2010 CDA R2.0 publication available via download only.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
             <br />
             <br />
-            <div class="col-sm-12 col-lg-5" style="padding-left: 0px;">
-              <h1>Education</h1>
-              <ul>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=80ZggCcUi58" target="_blank">5-minute Introduction to CDA
-                    (2024)</a>
-                </li>
-                <li>
-                  <a href="https://www.youtube.com/watch?v=hyYTG_NU1Bw" target="_blank">22-minute Introduction to CDA
-                    (2017)</a>
-                </li>
-                <li>
-                  <a href="https://www.pathlms.com/courses?category_ids%5B%5D=427&slug=hl7" target="_blank">HL7
-                    Education On Demand</a>
-                </li>
-                <li>
-                  <a href="https://hl7fundamentals.org/" target="_blank">HL7 Training & Get Certified in CDA</a>
-                </li>
-              </ul>
+            <div>
+              <h1>Interactive Graphical Map of CDA <i>(click to navigate)</i></h1>
               <br />
               <br />
+              <a href="https://hl7.org/cda/stds/core/cda-rmim.html" target="_blank">
+                <img alt="logo cda" width="100%" target="_blank"
+                  src="https://hl7.org/cda/stds/core/L-POCD_RM000040.gif">
+                <div>Graphical Map of CDA (CDA Refined Message Information Model, R-MIM, Diagram)</div>
+              </a>
+              <br />
+            </div>
+            <div class="col-sm-12 col-lg-7" style="font-size: 2.0rem;">
+
               <h1>Community and Resources</h1>
               <ul>
                 <li>
@@ -315,7 +317,8 @@
                   CDA Publication Tools
                   <ul>
                     <li>
-                      <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">HL7 FHIR IG Publisher (will publish CDA as well)</a>
+                      <a href="https://github.com/HL7/fhir-ig-publisher" target="_blank">HL7 FHIR IG Publisher (will
+                        publish CDA as well)</a>
                     </li>
                     <li>
                       <a href="https://art-decor.org/" target="_blank">Art-Decor CDA IG Builder</a>
@@ -331,26 +334,34 @@
                 </li>
               </ul>
             </div>
-            <div class="col-sm-12 col-lg-7">
+            <div class="col-sm-12 col-lg-5" style="font-size: 2.0rem;">
+              <h1>Education</h1>
+              <ul>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=80ZggCcUi58" target="_blank">5-minute Introduction to CDA
+                    (2024)</a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=hyYTG_NU1Bw" target="_blank">22-minute Introduction to CDA
+                    (2017)</a>
+                </li>
+                <li>
+                  <a href="https://www.pathlms.com/courses?category_ids%5B%5D=427&slug=hl7" target="_blank">HL7
+                    Education On Demand</a>
+                </li>
+                <li>
+                  <a href="https://hl7fundamentals.org/" target="_blank">HL7 Training & Get Certified in CDA</a>
+                </li>
+              </ul>
               <br />
               <br />
-              <br />
-              <br />
-              <br />
-              <br />
-              <a href="https://hl7.org/cda/stds/core/2023Sep/cda-rmim.html" target="_blank">
-                <img alt="logo cda" height="260px" target="_blank"
-                  src="https://hl7.org/cda/stds/core/2023Sep/L-POCD_RM000040.gif">
-                <div>Graphical Map of CDA (CDA Refined Message Information Model, R-MIM, Diagram)</div>
-              </a>
             </div>
           </div>
-
-          <!-- postamble.template starts here -->
-          <!-- ==============END CONTENT END CONTENT=================== -->
-
-          <p></p>
         </div>
+
+        <!-- postamble.template starts here -->
+        <!-- ==============END CONTENT END CONTENT=================== -->
+
 
       </div> <!-- /inner-wrapper -->
     </div> <!-- /row -->
